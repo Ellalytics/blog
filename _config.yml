@@ -18,21 +18,45 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Ella's Blog
+email: ellalytics@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  # Welcome to My Personal Blog
+
+  This is my personal web space, powered by Jekyll, where I record my thoughts, share knowledge, and showcase my work.
+
+  ## About This Blog
+
+  Here, I'll share my programming journey and technical explorations. This blog primarily features:
+
+  - **Technical Notes** - Insights on programming languages, frameworks, tools, and solutions to various technical challenges
+  - **Daily Thoughts** - Reflections on technology, learning methods, productivity, and personal growth
+  - **Project Portfolio** - Detailed documentation of my personal development projects, from concept to implementation
+  - **Learning Resources** - Recommendations for valuable books, courses, and online resources I've found helpful
+
+  ## Why Jekyll
+
+  I chose Jekyll as my blogging platform because of its simplicity and efficiency, focusing on content rather than flashy appearance. As a technology enthusiast, I appreciate its Markdown-based writing approach and powerful customization capabilities. With GitHub Pages deployment, I can concentrate on creating content without worrying about complex server maintenance issues.
+
+  ## Get in Touch
+
+  If you have any questions, suggestions, or ideas about the content I share, feel free to contact me through the contact information on the blog. I look forward to connecting with like-minded friends for mutual learning and growth.
+
+  Thank you for visiting my blog. I hope the content here brings you some inspiration and assistance!
+
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://ellalytics.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ellalytics
+github_username:  ellalytics
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +77,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache  # required for minimal-mistakes
