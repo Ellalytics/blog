@@ -49,9 +49,36 @@ url: "https://ellalytics.github.io" # the base hostname & protocol for your site
 twitter_username: ellalytics
 github_username:  ellalytics
 
+# Author information
+author:
+  name: "Ella"
+  avatar: "/assets/images/bio-photo.jpg"  # Add your photo to assets/images/
+  bio: "A passionate programmer and technology enthusiast"
+  location: "San Francisco Bay Area"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ellalytics"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/ellalytics"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:ellalytics@gmail.com"
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+
+
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Outputting
 permalink: /:categories/:title/
