@@ -36,3 +36,26 @@ search: false
     }
   }
 }
+
+/* Adjust radar chart margins to match h2 sections */
+.radar-chart {
+  margin: 0 0 1em;  /* This matches the h2 spacing */
+  padding: 0;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  height: 480px;
+  margin: 0 !important;  /* Override the auto margin */
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* If you need to adjust the chart container specifically */
+.radar-chart canvas {
+  margin-left: -40px;
+  padding-left: 0;
+}
