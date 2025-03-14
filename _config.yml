@@ -18,41 +18,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ella's Blog
-email: ellalytics@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  # Welcome to My Personal Blog
-
-  This is my personal web space, powered by Jekyll, where I record my thoughts, share knowledge, and showcase my work.
-
-  ## About This Blog
-
-  Here, I'll share my programming journey and technical explorations. This blog primarily features:
-
-  - **Technical Notes** - Insights on programming languages, frameworks, tools, and solutions to various technical challenges
-  - **Daily Thoughts** - Reflections on technology, learning methods, productivity, and personal growth
-  - **Project Portfolio** - Detailed documentation of my personal development projects, from concept to implementation
-  - **Learning Resources** - Recommendations for valuable books, courses, and online resources I've found helpful
-
-  ## Why Jekyll
-
-  I chose Jekyll as my blogging platform because of its simplicity and efficiency, focusing on content rather than flashy appearance. As a technology enthusiast, I appreciate its Markdown-based writing approach and powerful customization capabilities. With GitHub Pages deployment, I can concentrate on creating content without worrying about complex server maintenance issues.
-
-  ## Get in Touch
-
-  If you have any questions, suggestions, or ideas about the content I share, feel free to contact me through the contact information on the blog. I look forward to connecting with like-minded friends for mutual learning and growth.
-
-  Thank you for visiting my blog. I hope the content here brings you some inspiration and assistance!
-
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://ellalytics.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ellalytics
-github_username:  ellalytics
+# Site settings
+title                    : "Ella's Blog"
+description              : "A passionate programmer and technology enthusiast"
+email                    : ellalytics@gmail.com
+baseurl                  : "/blog"
+url                      : "http://127.0.0.1:4000"
+twitter_username         : ellalytics
+github_username          : ellalytics
 
 # Author information
 author:
-  name: "Ella"
-  avatar: "/assets/images/bio-photo.jpg"  # Add your photo to assets/images/
+  avatar: "/assets/images/Ella.png"
   bio: "A passionate programmer and technology enthusiast"
   location: "San Francisco Bay Area"
   links:
@@ -66,46 +43,95 @@ author:
       icon: "fas fa-fw fa-envelope"
       url: "mailto:ellalytics@gmail.com"
 
+# Build settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "contrast"
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+
+# Site settings
+og_image                 : /assets/images/Ella.png
+timezone                 : America/Los_Angeles
+analytics:
+  provider               : "google-gtag"
+  google:
+    tracking_id          : "G-EMB5R38212"
+    anonymize_ip         : true
+
+footer:
+  links:
+    - label              : "Github"
+      icon               : "fab fa-fw fa-github"
+      url                : "https://github.com/ellalytics"
+    - label              : "Twitter"
+      icon               : "fab fa-fw fa-x-twitter"
+      url                : "https://twitter.com/ellalytics"
+include:
+  - _pages
+
+# Search
+search                   : true
+lunr:
+  search_within_pages    : true
+  search_full_content    : false
+
 defaults:
   # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
       author_profile: true
+      comments: true
+      toc: false
+      toc_label: '目录'
+      toc_sticky: true
+  # _jekyll (collection)
+  - scope:
+      path: ""
+      type: jekyll
+    values:
+      layout: single
+      toc: true
+      toc_label: '目录'
+      toc_sticky: true
+      author_profile: false
+      sidebar:
+        nav: "jekyll"
+  - scope:
+      path: ""
+      type: css
+    values:
+      layout: single
+      toc: true
+      sidebar:
+        nav: "css"
 
-
-# Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Collections
+collections:
+  jekyll:
+    output: true
+    sort_by: lesson
+    permalink: /tutorials/:collection/:path/
+  products:
+    output: true
+    permalink: /:collection/:path/
+  css:
+    output: true
 
 plugins:
   - jekyll-feed
-  - jekyll-include-cache  # required for minimal-mistakes
+  - jekyll-include-cache
   - jekyll-remote-theme
+  - jekyll-paginate

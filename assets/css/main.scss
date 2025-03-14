@@ -1,0 +1,38 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+.page__content {
+    p,
+    li,
+    dl {
+        font-style: normal;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 26px;
+    }
+}
+
+
+/* Change search icon color to green */
+.search__toggle {
+  color: #0e421a !important; /* bright green */
+  /* Or use a more subtle green: */
+  /* color: #28a745 !important; */ /* bootstrap green */
+  /* color: #198754 !important; */ /* darker green */
+}
+
+/* Change navigation hover underline color */
+.greedy-nav {
+  a {
+    &:before {
+      background: #26462d !important; /* bright green - change this color to what you want */
+    }
+  }
+}
