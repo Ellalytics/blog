@@ -71,10 +71,10 @@ search: false
   }
 }
 
-
 /* Make feature row images consistent size */  
 .feature__item .archive__item-teaser {  
-  height: 200px; /* Set a fixed height */  
+  height: 220px; /* Set a fixed height */  
+  width: 220px; /* Set a fixed width */  
   overflow: hidden;  
   display: flex;  
   align-items: center;  
@@ -86,3 +86,26 @@ search: false
   height: 100%;  
   object-fit: cover; /* This maintains aspect ratio while covering the area */  
 }  
+
+/* Make text width match image width */  
+.feature__item .archive__item-body {  
+  width: 220px; /* Match the image width */  
+  margin: 0 auto; /* Center the text block */  
+  /* Add this if the body has the top line as a border */  
+  border-top: 1px solid #color; /* Add your color here */  
+}  
+
+/* Ensure text wraps properly and fix the bottom line issue */  
+.feature__item .archive__item-body p {  
+  word-wrap: break-word;  
+  text-align: left; /* Align text to the left for better readability */  
+  width: 100%; /* Ensure paragraph takes full width */  
+  padding-bottom: 10px; /* Add some space for the bottom line */  
+  border-bottom: 1px solid #color; /* Add your color here */  
+  display: block; /* Ensure it spans full width */  
+}  
+
+.grid__item, .feature__item {  
+  margin-right: 100px;  /* Adjust value as needed */  
+  margin-bottom: 0px; /* Adds vertical spacing if they wrap */  
+}   
