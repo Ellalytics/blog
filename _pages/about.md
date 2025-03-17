@@ -6,11 +6,9 @@ author_profile: true
 ---
 
 
-Dynamic software engineer crafting robust full-stack solutions with Java/Python.
-
-Delivers scalable architectures that drive business impact.
-
-Designs cutting-edge RAG and generative AI applications.
+Dynamic software engineer crafting robust full-stack solutions with Java/Python.<br>
+Delivers scalable architectures that drive business impact.<br>
+Designs cutting-edge RAG and GenAI applications.
 
 
 ## WORK EXPERIENCE

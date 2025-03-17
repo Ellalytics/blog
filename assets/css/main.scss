@@ -22,10 +22,10 @@ search: false
 
 /* Change search icon color to green */
 .search__toggle {
-  color: #0e421a !important; /* bright green */
+  // color: #0e421a !important; /* bright green */
   /* Or use a more subtle green: */
   /* color: #28a745 !important; */ /* bootstrap green */
-  /* color: #198754 !important; */ /* darker green */
+  color: #198754 !important;
 }
 
 /* Change navigation hover underline color */
@@ -46,8 +46,8 @@ search: false
 .chart-container {
   position: relative;
   width: 100%;
-  max-width: 480px;
-  height: 480px;
+  max-width: 450px;
+  height: 450px;
   margin: 0 !important;  /* Override the auto margin */
   background-color: white;
   border-radius: 10px;
@@ -59,3 +59,30 @@ search: false
   margin-left: -40px;
   padding-left: 0;
 }
+/* Change Learn More button color */
+.btn {
+  &--primary {
+    background-color: #14d97d26 !important; /* Light green */
+    color: #000 !important; /* Black text for better contrast */
+    
+    &:hover {
+      background-color: #75cd7584 !important; /* Slightly lighter green on hover */
+    }
+  }
+}
+
+
+/* Make feature row images consistent size */  
+.feature__item .archive__item-teaser {  
+  height: 200px; /* Set a fixed height */  
+  overflow: hidden;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+}  
+
+.feature__item .archive__item-teaser img {  
+  width: 100%;  
+  height: 100%;  
+  object-fit: cover; /* This maintains aspect ratio while covering the area */  
+}  
