@@ -33,28 +33,28 @@ e-commerce:
     btn_class: "btn--primary"  
     btn_label: "Learn more"  
 ai:  
-  - image_path: /assets/images/floor.png  
-    alt: "100% free"  
-    title: "100% free"   
+  - image_path: /assets/images/chatbot.png  
+    alt: "customizable"  
+    title: "AskElla PDFChatBot "   
     url: "/docs/license/"  
     btn_class: "btn--primary"  
     btn_label: "Learn more"   
-  - image_path: /assets/images/floor.png  
+  - image_path: /assets/images/cost.png  
     alt: "100% free"  
-    title: "100% free"   
+    title: "EllaVue AI CostOptimizer"   
     url: "/docs/license/"  
     btn_class: "btn--primary"  
     btn_label: "Learn more" 
-play-ground:  
-  - image_path: /assets/images/floor.png  
+game:  
+  - image_path: /assets/images/floor2.png  
     alt: "100% free"  
-    title: "100% free"   
+    title: "Software Simulated TV Game Show"   
     url: "/docs/license/"  
     btn_class: "btn--primary"  
     btn_label: "Learn more"   
-  - image_path: /assets/images/floor.png  
+  - image_path: /assets/images/minecraft3.png  
     alt: "100% free"  
-    title: "100% free"   
+    title: "Minecraft Creative Chess"   
     url: "/docs/license/"  
     btn_class: "btn--primary"  
     btn_label: "Learn more" 
@@ -70,8 +70,8 @@ play-ground:
 
 {% include feature_row id='e-commerce' %}
 
-## Playground
+## Game
 
-{% include feature_row id='play-ground' %}
+{% include feature_row id='game' %}
     
 
