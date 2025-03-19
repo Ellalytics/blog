@@ -3,6 +3,9 @@ layout: single
 title: ""  
 permalink: /portfolio/  
 author_profile: true  
+toc: true
+toc_label: CATEGORIES
+
 
 energy:  
   - image_path: /assets/images/power_system00.png  

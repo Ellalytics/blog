@@ -104,13 +104,15 @@ defaults:
       toc: false
       toc_label: '目录'
       toc_sticky: true
+
+
   # _jekyll (collection)
   - scope:
       path: ""
       type: jekyll
     values:
       layout: single
-      toc: true
+      toc: false
       toc_label: '目录'
       toc_sticky: true
       author_profile: false
@@ -135,7 +137,6 @@ collections:
     output: true
     permalink: /:collection/:path/
   css:
-    output: true
 
 plugins:
   - jekyll-feed

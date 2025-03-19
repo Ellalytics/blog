@@ -62,11 +62,11 @@ search: false
 /* Change Learn More button color */
 .btn {
   &--primary {
-    background-color: #14d97d26 !important; /* Light green */
+    background-color: #6adc986a !important; /* Light green */
     color: #000 !important; /* Black text for better contrast */
     
     &:hover {
-      background-color: #75cd7584 !important; /* Slightly lighter green on hover */
+      background-color: #43f088 !important; /* Slightly lighter green on hover */
     }
   }
 }
@@ -109,3 +109,9 @@ search: false
   margin-right: 100px;  /* Adjust value as needed */  
   margin-bottom: 0px; /* Adds vertical spacing if they wrap */  
 }   
+
+/* Change the color of all h2 elements within the TOC */  
+.toc .nav__title {  
+  color: #f4fdf7;
+  background-color: #7fa88f;
+} 
