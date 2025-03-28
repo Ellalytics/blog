@@ -67,9 +67,9 @@ Duration | Employer | Title
         {  
           name: "Java Web",  
           skills: [  
-            { name: "Spring", score: 4 },  
+            { name: "Spring", score: 5 },  
             { name: "Struts", score: 4 },  
-            { name: "Servlet", score: 5 }  
+            { name: "Servlet", score: 4 }  
           ]  
         },  
         {  
@@ -78,7 +78,7 @@ Duration | Employer | Title
             { name: "Flask", score: 5 },  
             { name: "SQLAlchemy", score: 5 },  
             { name: "Flask-Login", score: 5 },  
-            { name: "Jinja2", score: 5 },  
+            { name: "Jinja2", score: 4 },  
             { name: "Django", score: 5 }  
           ]  
         }  
@@ -118,18 +118,20 @@ Duration | Employer | Title
         {  
           name: "LLM Integration",  
           skills: [  
-            { name: "Transformer", score: 5 },  
+            { name: "Transformer", score: 3 },  
             { name: "LangChain", score: 5 },  
             { name: "RAG", score: 5 },  
             { name: "Text Chunking", score: 5 },  
             { name: "Vector Embedding", score: 5 }  
           ]  
         },  
+
+
         {  
           name: "Agent Development",  
           skills: [  
-            { name: "ChatPDF App", score: 5 },  
-            { name: "Prompt Optimization", score: 4 },  
+            { name: "ChatPDF", score: 5 },  
+            { name: "Prompt Engineering", score: 4 },  
             { name: "Complex Instructions", score: 5 }  
           ]  
         }  

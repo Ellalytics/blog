@@ -1,0 +1,124 @@
+---
+layout: single
+title:  "RBAC: Design and Implementation"
+date:   2024-01-01 19:03:13 -0800
+categories: Electrical  
+---
+Traditional RBAC models often struggle with **static bindings**, **role explosion**, and **a lack of contextual control**. To address this, I introduced a pid-mid inheritance mechanism in Struts2 with interceptors and annotations for fine-grained validation, leveraging Redis caching to reduce database queries and enhance performance without compromising security.
+
+---
+Stack
+- **Struts2:** MVC framework for web request handling.
+- **Spring:** For dependency injection and transaction management.
+- **Hibernate:** For data access.
+- **MySQL:** To store user, role, and permission data.
+
+Core Components
+- **Interceptor:** For permission validation.
+- **Annotation:** For defining permissions at the method level.
+- **Session + Database:** To ensure real-time validation and consistency.
+
+Basic Relationships
+- User ↔ Role: **Many-to-Many**
+- Role ↔ Permission: **Many-to-Many**
+- Permission ↔ Resource: **Many-to-Many**
+
+---
+### Annotation
+
+In this project, we use a custom annotation `@AnnotationLimit` to define fine-grained permission control on action methods. The annotation includes two attributes:
+- `mid`: Represents the child module identifier.
+- `pid`: Represents the parent module identifier.
+
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface AnnotationLimit {
+    String mid();
+    String pid();
+}
+```
+
+---
+
+### Key Logic
+The `ErrorAndLimitInterceptor` class handles the permission validation by checking the custom annotation on action methods and verifying if the current user has the required permissions.
+- **Annotation Checking:** Uses reflection to check if the method has `@AnnotationLimit`.
+- **Role Validation:** Fetches user roles from the session and validates against the permission table.
+
+```java
+public class ErrorAndLimitInterceptor extends MethodFilterInterceptor {
+
+    @Override
+    protected String doIntercept(ActionInvocation invocation) throws Exception {
+        HttpServletRequest request = (HttpServletRequest) invocation.getInvocationContext()
+                .get(StrutsStatics.HTTP_REQUEST);
+        
+        try {
+            Object action = invocation.getAction();
+            String methodName = invocation.getProxy().getMethod();
+            Method method = action.getClass().getMethod(methodName, null);
+
+            if (isCheckLimit(request, method)) {
+                return invocation.invoke();
+            } else {
+                request.setAttribute("errorMsg", "No permission to access this feature.");
+                return "errorMsg";
+            }
+        } catch (Exception e) {
+            request.setAttribute("errorMsg", "An error occurred: " + e.getMessage());
+            return "errorMsg";
+        }
+    }
+
+    private boolean isCheckLimit(HttpServletRequest request, Method method) {
+        if (!method.isAnnotationPresent(AnnotationLimit.class)) {
+            return false;
+        }
+        
+        ElecUser user = (ElecUser) request.getSession().getAttribute("globle_user");
+        if (user == null) {
+            return false;
+        }
+
+        Hashtable<String, String> roles = (Hashtable<String, String>) request.getSession().getAttribute("globle_role");
+        if (roles == null) {
+            return false;
+        }
+
+        AnnotationLimit limit = method.getAnnotation(AnnotationLimit.class);
+        String mid = limit.mid();
+        String pid = limit.pid();
+
+        WebApplicationContext wac = WebApplicationContextUtils.getWebApplicationContext(
+                request.getSession().getServletContext());
+        IElecRoleService roleService = (IElecRoleService) wac.getBean(IElecRoleService.SERVICE_NAME);
+
+        for (String roleID : roles.keySet()) {
+            if (roleService.findRolePopedomByID(roleID, mid, pid)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
+---
+
+### Caching with Real-Time Updates
+
+To optimize permission validation, caching mechanisms are used. Permissions are loaded into memory when the user logs in and updated in real-time if the role permissions change.
+
+- **Session Cache:** Store user roles and permissions in the session for quick access.
+- **Database Sync:** Real-time updates by invalidating the cache if permission changes are detected.
+
+```java
+public void updateRolePermissions(String roleID) {
+    cacheManager.getCache("rolePermissions").evict(roleID);
+    List<RolePermission> permissions = roleDao.getPermissionsByRole(roleID);
+    cacheManager.getCache("rolePermissions").put(roleID, permissions);
+}
+```
+
+---

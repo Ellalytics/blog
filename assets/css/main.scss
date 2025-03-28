@@ -17,8 +17,26 @@ search: false
         letter-spacing: 0.5px;
         line-height: 26px;
     }
+
+    /* Target code blocks */
+    div.highlighter-rouge,
+    figure.highlight {
+        pre.highlight {
+            font-size: 0.75em !important;  /* Smaller font size for code blocks */
+            line-height: 1.5 !important;   /* Adjust line height for readability */
+        }
+    }
+    
+    /* Target inline code */
+    code.highlighter-rouge {
+        font-size: 0.8em !important;     /* Slightly smaller font for inline code */
+    }
 }
 
+/* If you want to target just Java code specifically */
+.language-java {
+    font-size: 0.75em !important;      /* Target just Java code */
+}
 
 /* Change search icon color to green */
 .search__toggle {
@@ -71,6 +89,33 @@ search: false
   }
 }
 
+/* Custom gentle green button style */
+.btn--primary {
+  background-color: #a8d6b9!important;  /* Gentle green */
+  color: #fff !important;  /* White text */
+  border-color: #a8d6b9 !important;
+  
+  &:hover {
+    background-color: #8fb99f  !important;  /* Slightly lighter on hover */
+    border-color: #6adc986a !important;
+  }
+  
+  /* Add a subtle shadow and rounded corners for a more elegant look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 4px !important;
+  
+  /* Add smooth transition for hover effect */
+  transition: all 0.3s ease !important;
+}
+
+/* Additional style to create a more refined button */
+.portfolio-page .btn--primary {
+  font-weight: 400 !important;
+  padding: 0.5em 1em !important;
+  font-size: 0.9em !important;
+  letter-spacing: 0.5px !important;
+}
+
 /* Make feature row images consistent size */  
 .feature__item .archive__item-teaser {  
   height: 220px; /* Set a fixed height */  
@@ -89,7 +134,7 @@ search: false
 
 /* Make text width match image width */  
 .feature__item .archive__item-body {  
-  width: 220px; /* Match the image width */  
+  width: 280px; /* Match the image width */  
   margin: 0 auto; /* Center the text block */  
   /* Add this if the body has the top line as a border */  
   border-top: 1px solid #color; /* Add your color here */  
@@ -115,3 +160,77 @@ search: false
   color: #f4fdf7;
   background-color: #7fa88f;
 } 
+blockquote {
+  border-left: 5px solid #7fa88f; 
+  padding: 25px 8px 5px 15px;
+  color: #3c3a3ada; 
+  background: #f4fdf7; 
+}
+
+/* Style portfolio category headers */
+.page__content h2 {
+  color: #515a55;
+  border-bottom: none;
+  
+  /* Remove underline on hover */
+  &:hover {
+    text-decoration: none;
+    color: #7fa88f;
+  }
+}
+
+/* Remove underlines from feature item titles and style them */
+.archive__item-title {
+  font-size: 1.0em;
+
+  text-decoration: none !important;
+  
+  &:hover {
+    text-decoration: none !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+    
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}
+
+/* Make sure linked elements don't show underlines */
+.archive__item a {
+  text-decoration: none !important;
+  
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+/* Center the button and add more margin */
+.archive__item-body {
+  text-align: center;  /* Center all content */
+  
+  p {
+    margin-top: 1.5em !important;  /* Add more space above the button */
+    text-align: center;  /* Ensure button container is centered */
+    
+    .btn--primary {
+      display: inline-block;  /* Allow centering */
+      margin: 0 auto;  /* Center the button */
+      font-weight: 400 !important;
+      padding: 0.5em 1em !important;
+      font-size: 0.9em !important;
+      letter-spacing: 0.5px !important;
+    }
+  }
+}
+
+/* Center other elements in item body */
+.archive__item-title {
+  text-align: left;
+}
+
+.archive__item-excerpt {
+  text-align: left;
+}

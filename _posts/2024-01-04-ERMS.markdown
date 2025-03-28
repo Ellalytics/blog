@@ -1,0 +1,44 @@
+---
+layout: single
+title:  "Electrical Resource Management System Develop"
+date:   2024-01-04 19:03:13 -0800
+categories: Electrical  
+---
+
+## Overview
+Handles **Electrical infrastructure, equipment, and site operations**, with a strong focus on **role-based access control (RBAC)** for secure data handling and efficient workflows.
+
+---
+
+## Core Modules
+
+### 👤  Role-Based Access Control (RBAC)
+- **User & Role Management:** Developed a flexible framework to manage user roles (Administrator, Operator, Technician, Auditor) with **granular permissions**, covering module, action, and field-level controls.
+- **Permission Control:** Implemented role-based access control (RBAC) to enforce secure and restricted access to **modules, data, and operations**.
+- **Scalable Architecture:** Designed a decoupled system where permissions, roles, and users are independent, ensuring flexibility and scalability.
+
+###  Resource Management
+- **Equipment Management:** Optimized **site equipment management** by enhancing **maintenance records**, **procurement plans**, and **status tracking**, ensuring seamless operations and data accuracy.
+- **Document Management:** Built **secure**, **efficient document management** features for uploading, downloading, and searching technical files, boosting accessibility and data integrity.
+
+### Site Operations
+- **Site Info & Monitoring:** Monitored site performance, including fault types, duration, resolutions, and trend analysis with **role-filtered dashboards**.  
+- **Maintenance:** Scheduled and tracked maintenance tasks, recorded faults, and implemented resolutions to ensure system reliability.  
+
+---
+
+##  Architecture
+- **Frontend:** JSP, Javascript.  
+- **Backend:** Java + Spring, Structs, Hibernate.  
+- **Database:** MySQL + Redis for caching RBAC rules.  
+- **Deployment:** Docker + Kubernetes for scalability.  
+
+---
+
+## Key Features
+- **Granular RBAC**
+- **Business Logic:** Designed complex SQL schemas
+- **Performance:** Optimized with caching/indexing 
+- **UI Extensibility:** Enabled dynamic configurations
+- **Indexing:** Fast search with Lucene
+- **Editing:** WYSIWYG with CKEditor

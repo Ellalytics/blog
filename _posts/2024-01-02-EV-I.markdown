@@ -1,0 +1,87 @@
+---
+layout: single
+title:  "EV Charging Station Siting and Sizing Algorithm I"
+date:   2024-01-02 19:03:13 -0800
+categories: Electrical  
+mathjax: true
+---
+
+Proposes a charging station siting and sizing algorithm that optimizes station layout and capacity by considering both **traffic** and **power networks**. It aims to maximize **V2G potential**, **balance charging loads**, and **extend EV parking time**.
+
+## Dynamic Traffic Network Modeling
+To predict EV charging load, a dynamic traffic network model divides the day into 7 time periods, updating road traffic flow over time.
+
+Let $G = (V, E, H, K)$ represent the traffic network, where:
+
+- $V$: Set of all nodes in the traffic network  
+- $E$: Set of road segments in the traffic network  
+- $H$: Set of divided time periods, $T = 7$  
+- $K$: Set of weights of road segments, where $k_{ij}(t)$ represents the weight of road segment $v_{ij}$ in time period $t$  
+
+The weight of the road segment is calculated based on the speed-flow model, which determines the vehicle speed:
+
+$$
+v_{ij}(t) = \frac{v_{ij}^{\text{max}}}{1 + \left( \frac{Q_{ij}(t)}{C_{ij}} \right)^w}
+$$
+
+Where:
+
+- $v_{ij}^{\text{max}}$: Maximum speed specified for road segment $ij$  
+- $C_{ij}$: Traffic capacity of road segment $ij$  
+- $Q_{ij}(t)$: Traffic flow of road segment $ij$ at time $t$  
+- $w$: Adaptive coefficient determined by road grade  
+
+---
+
+## Path Selection Algorithm
+To simulate the driving path of electric vehicles, it combines the OD analysis method and the Floyd algorithm.
+
+####  OD Analysis Method
+
+The OD analysis uses historical data to determine EV trip origins and destinations, creating an OD matrix. This matrix is converted into a destination probability matrix to show vehicle trip distribution.
+
+####  Floyd Algorithm
+
+The Floyd algorithm finds the shortest paths between all nodes in a weighted graph by iteratively comparing possible paths.The core idea of the Floyd algorithm is to progressively update the shortest distance between nodes through dynamic programming. 
+
+<img src="/blog/assets/images/Floyd.png" alt="Flowchart of Floyd-Warshall Algorithm" width="400">
+
+---
+
+## Charging Station Siting and Sizing
+
+#### Objective Function
+
+The objective is to maximize the available energy storage capacity while considering the equilibrium of the traffic network. 
+
+$$
+\max (|E_{\text{total,ch,gy}}(T)| + |E_{\text{total,dis,gy}}(T)| + \sum T_{i,\text{gy}} - S_{\text{car,gy}})
+$$
+
+Where:
+
+- $E_{\text{total,ch,gy}}(T)$, $E_{\text{total,dis,gy}}(T)$: Normalized total energy storage capacity
+- $T_{i,\text{gy}}$: Normalized parking time
+- $S_{\text{car,gy}}$: Normalized variance of distribution
+
+#### Algorithm Flow
+
+-  **Initialization:** Construct a dynamic traffic network model, initialize the OD matrix and the Floyd algorithm.
+-  **Path Planning:** Simulate the driving path of electric vehicles according to the OD analysis method and the Floyd algorithm.
+-  **Load Forecasting:** Forecast the charging load of electric vehicles in different time periods.
+-  **Siting and Sizing:** According to the objective function, select the optimal charging station locations and capacities.
+-  **Iterative Optimization:** Continuously adjust the location and capacity of charging stations until the objective function reaches its maximum value.
+
+---
+
+## Optimal Distribution of Charging Stations  
+
+The optimal distribution was determined by analyzing various time periods and selecting locations that maximize **energy storage capacity**, **smooth charging load distribution**, and **extend vehicle parking time at stations**.  
+
+A municipal district with 29 nodes and 49 roads is analyzed using Matlab to optimize EV charging station locations. Stations 8, 14, and 20 are placed at commercial, working, and residential interfaces, while 25 and 26 are in commercial centers. This distribution reflects high charging demand and vehicle flow in commercial zones, with other stations (e.g., 9, 23) near functional area interfaces.
+
+<img src="/blog/assets/images/optimal_distribution_of_charing_stations.png" alt="Distribution of optimal charging station sites">
+
+
+
+---
