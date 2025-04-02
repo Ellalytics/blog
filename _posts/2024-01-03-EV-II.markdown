@@ -2,7 +2,7 @@
 layout: single
 title:  "Rural America's EV Revolution"
 date:   2024-01-03 19:03:13 -0800
-categories: Electrical 
+categories: EV 
 mathjax: true
 ---
 
@@ -38,9 +38,9 @@ Vermont, despite being a predominantly rural state, has become one of the states
 
 Iowa is exploring the application of electric technology to agricultural equipment:
 
-- Electric tractor pilot projects
-- Farm solar + battery storage systems supporting vehicle charging
-- Electric agricultural vehicle development
+- **Electric tractor pilot projects**
+- **Farm solar + battery storage systems supporting vehicle charging**
+- **Electric agricultural vehicle development**
 
 ## Future Development Directions
 

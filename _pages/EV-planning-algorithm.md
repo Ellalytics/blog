@@ -1,14 +1,13 @@
 ---
 layout: single
-title:  "EV Charging Station Siting and Sizing Algorithm I"
-date:   2024-01-02 19:03:13 -0800
-categories: EV  
-mathjax: true
+title:  "EV Charging Station Siting and Sizing Algorithm"
+permalink: /portfolio/EV-planning-algorithm/
+author_profile: true
 ---
 
 Proposes a charging station siting and sizing algorithm that optimizes station layout and capacity by considering both **traffic** and **power networks**. It aims to maximize **V2G potential**, **balance charging loads**, and **extend EV parking time**.
 
-## Dynamic Traffic Network Modeling
+## 🚦Dynamic Traffic Network Modeling
 To predict EV charging load, a dynamic traffic network model divides the day into 7 time periods, updating road traffic flow over time.
 
 Let $G = (V, E, H, K)$ represent the traffic network, where:

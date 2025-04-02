@@ -20,14 +20,14 @@ energy:
     alt: "customizable"  
     title: "EV Planning Algorithm"  
     excerpt: ""
-    url: "/docs/configuration/"  
+    url: "/portfolio/EV-planning-algorithm/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 e-commerce:  
   - image_path: /assets/images/bean2.png  
     alt: "fully responsive"  
     title: "BookBean TradeTech"   
-    url: "/docs/layouts/"  
+    url: "/portfolio/bookbean-tradetech/"  
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/panicbuying.png  
