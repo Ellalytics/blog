@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "BookBean TradeTech"
+title:  "BookBean TradeTech Introduction"
 date:   2024-01-05 19:03:13 -0800
 categories: E-commerce
 author_profile: true
@@ -100,6 +100,8 @@ class Book:
 ###  **4. Book Recommendation**
 - Based on previous trades, search history, and saved books.
 - Use Collaborative Filtering to recommend books liked by similar users.
+
+<a href="/blog/E-commerce/BookBean-Cache/" class="btn btn--primary">Learn more</a>
 
 ---
 

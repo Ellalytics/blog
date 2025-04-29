@@ -12,6 +12,8 @@ author_profile: true
 - Earn **book beans** (points) through book uploads and successful trades
 - Discover new books through **personalized recommendations**
 - Follow users, bookmark books, and leave **ratings and reviews**
+<br>
+<img src="/blog/assets/images/bookbean.png" alt="bookbean_my_donations">
 
 ---
 
@@ -102,6 +104,8 @@ class Book:
 ###  **4. Book Recommendation**
 - Based on previous trades, search history, and saved books.
 - Use Collaborative Filtering to recommend books liked by similar users.
+
+<a href="/blog/E-commerce/BookBean-Points/" class="btn btn--primary">Learn more</a>
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "BookBean Points System Design"
+title:  "BookBean Points Design"
 date:   2024-01-06 19:03:13 -0800
 categories: E-commerce
 author_profile: true
@@ -14,9 +14,9 @@ Designing an effective points system for BookBean platform requires balancing us
 ## Points System Design
 
 1. **Marking a Donatable Book**:
-   5 points awarded per book marked as donatable. Maximum of 10 books per user per day to prevent point farming.
+   2 points awarded per book marked as donatable. Maximum of 10 books per user per day to prevent point farming.
 
-2. **Successful Donation**:30 points awarded per successful donation. 30 points deducted per book received as a donation.
+2. **Successful Donation**:10 points awarded per successful donation. 10 points deducted per book received as a donation.
 
 3. **User Reviews**: 5 points awarded for valid review submitted after each transaction. 5 reviews Maximum per user per day to avoid spammy feedback.
 
