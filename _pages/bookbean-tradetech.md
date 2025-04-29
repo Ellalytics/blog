@@ -12,7 +12,6 @@ author_profile: true
 - Earn **book beans** (points) through book uploads and successful trades
 - Discover new books through **personalized recommendations**
 - Follow users, bookmark books, and leave **ratings and reviews**
-<br>
 <img src="/blog/assets/images/bookbean.png" alt="bookbean_my_donations">
 
 ---

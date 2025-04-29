@@ -33,29 +33,30 @@ e-commerce:
   - image_path: /assets/images/panicbuying.png  
     alt: "fully responsive"  
     title: "PanicBuying System"   
-    url: "/docs/layouts/"  
+    url: "/portfolio/panicbuying/"  
     btn_class: "btn--primary"
     btn_label: "Learn more"
 ai:  
   - image_path: /assets/images/chatbot.png  
     alt: "customizable"  
     title: "AskElla PDFChatBot"   
-    url: "/docs/license/"  
+    url: "/portfolio/chatbot/"  
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/cost.png  
     alt: "100% free"  
-    title: "EllaVue CostOptimizer"   
-    url: "/docs/license/"  
+    title: "EllaVue AI CostOptimizer"   
+    url: "/portfolio/costoptimizer/" 
     btn_class: "btn--primary"
     btn_label: "Learn more"
 game:  
   - image_path: /assets/images/floor2.png  
     alt: "100% free"  
-    title: "Simulated TV Show"   
-    url: "/docs/license/"  
+    title: "Software Simulated TV Game Show"   
+    url: "/portfolio/floor/"  
     btn_class: "btn--primary"
     btn_label: "Learn more"
+   
   - image_path: /assets/images/minecraft3.png  
     alt: "100% free"  
     title: "Minecraft Chess"   
