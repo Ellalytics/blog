@@ -1,0 +1,29 @@
+---
+layout: single
+title:  "AskElla PDFChatBot V2"
+date:   2024-01-11 19:03:13 -0800
+categories: AI
+author_profile: true
+---
+
+
+##  Project Overview
+
+**AskElla PDFChatBot2.0** compared to [the previous version](/blog/AI/RAG), it upgrades by combining **text** and **image** processing to offer more personalized recommendations and smarter responses. It leverages advanced AI to understand both written and visual content, enabling richer, context-aware conversations from product catalogs.
+
+
+## Core Components
+- **Interactive Frontend:** Built with Streamlit, offering a clean chat interface and sidebar assistant info.
+- **Document Processing:** Extracts text and images using **PyPDF2** and **pdfplumber**; uses LangChain's splitter for efficient chunking.
+- **Vector Database System:** persistent vector database for storing and retrieving embeddings, handles both text and image embeddings, implements cosine similarity for relevant document retrievalanalysis, creates embeddings for both text and images. 
+- **Multimodal Processing Pipeline:** Uses **OpenCV** and **MediaPipe** to analyze images and handle mixed text-image queries.
+- **Smart Response Generation System:** Leverages Gemini Pro with custom prompt templates to generate structured, context-aware answers.
+
+## Key Advantages
+
+- **Multimodal Capabilities:** Understands and processes both text and images for accurate recommendations and visual matching.
+- **Scalable Design:** Modular design with persistent vector storage enables flexible upgrades and AI model integration.
+- **Robust Error Handling:** Gracefully manages missing API keys, image processing failures, and incomplete information.
+
+## [Github](https://github.com/Ellalytics/ShoeStoreCustomerServiceAssistantMultimodal)
+<img src="/blog/assets/images/askella_2.png" alt="askella chatbot">
