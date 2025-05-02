@@ -16,8 +16,8 @@ I build a **Natural Language Interface** that delivers accurate, context-aware a
 <br>
 
 **AskElla PDFChatBot** is a smart customer service assistant built with **Streamlit**, **LangChain**, **ChromaDB**, **Generative AI.** 
-It's designed to answer product-related queries from PDF, combine RAG with modern vector search and LLMs to deliver accurate, context-aware responses.
-
+It's designed to answer product-related queries from PDF, combine RAG with modern vector search and LLMs to deliver accurate, context-aware responses. It serves as a template for any domain where structured documents need to be transformed into conversational experiences.
+<img src="/blog/assets/images/askella_1.png" alt="askella chatbot">
 ---
 
 ## High-Level Architecture
@@ -67,3 +67,17 @@ It's designed to answer product-related queries from PDF, combine RAG with moder
 ```
 
 
+## Core Components
+- **Streamlit Frontend:** Clean and interactive interface for user queries and responses, with assistant info in the sidebar.
+- **PDF Processing:** Extracts text page by page, preserving layout for accurate chunking.
+- **Chunking with LangChain:** Utilizeed RecursiveCharacterTextSplitter to break down text into overlapping chunks. Balances chunk size for optimal embedding and retrieval.
+- **Embeddings with Google:** Converts text chunks into vectors using Google’s embedding model.
+- **ChromaDB Vector Store:** Stores and indexes the embeddings with their corresponding text. Enables fast and accurate semantic search during query time.
+- **RAG:** Embeds user queries and retrieves top-k relevant chunks.Constructs a context-aware prompt with LangChain. Passes prompt to gemini for grounded response generation.
+- **LangChain Orchestration:** Coordinates the full pipeline: from PDF ingestion to chunking, retrieval, and LLM invocation. Uses a predefined prompt template to ensure responses are based strictly on the document.
+
+## Key Advantages
+
+- **SContext-Aware**: No hallucination—answers grounded in the PDF only
+- **Fast Retrieval**: Embeddings + ChromaDB ensures quick response times
+- **Scalable Design**: Easily replace PDF, swap embedding models, or upgrade the LLM
