@@ -1,11 +1,10 @@
 ---
 layout: single
-title: "EllaVue CostOptimizer"
-permalink: /portfolio/costoptimizer/
+title:  "EllaVue CostOptimizer"
+date:   2024-01-12 19:03:13 -0800
+categories: AI
 author_profile: true
---- 
-## Overview
-
+---
 
 In infrastructure projects, cost control isn’t just about crunching numbers — it’s about making informed decisions, and starts with access to the right documents: **price references**, **legal texts**, **technical standards**, and **regulatory guidelines**.
 

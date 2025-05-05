@@ -45,7 +45,7 @@ ai:
     btn_label: "Learn more"
   - image_path: /assets/images/cost.png  
     alt: "100% free"  
-    title: "EllaVue AI CostOptimizer"   
+    title: "EllaVue CostOptimizer"   
     url: "/portfolio/costoptimizer/" 
     btn_class: "btn--primary"
     btn_label: "Learn more"

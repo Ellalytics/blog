@@ -5,18 +5,21 @@ permalink: /illustrations/
 author_profile: true
 ---
 
-Welcome to my illustration gallery! Here you'll find a collection of my artwork and designs.
+Welcome to my illustration gallery! Here you'll find a collection of my artwork.
 
-## Gallery
+##  My Casual Portrait Gallery
 
-[Your illustrations will go here]
 
 <!-- Example of how to add an illustration:
 ![Illustration Title](/blog/assets/images/illustration1.png)
 -->
+<img src="/blog/assets/images/first_molina.png" alt="illustration" width="600" style="margin-bottom: 20px;">
 
-## Categories
+<img src="/blog/assets/images/gcc_latha.png" alt="illustration" width="600" style="margin-bottom: 20px;">
 
-- Digital Art
-- Sketches
-- Concept Art
+<img src="/blog/assets/images/pk_1.png" alt="illustration" width="600" style="margin-bottom: 20px;">
+
+<img src="/blog/assets/images/pk_2.png" alt="illustration" width="600" style="margin-bottom: 20px;">
+
+<img src="/blog/assets/images/gcc_nicole.png" alt="illustration" width="600" style="margin-bottom: 20px;">
+

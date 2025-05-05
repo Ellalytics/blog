@@ -8,7 +8,6 @@ author_profile: true
 Started as a fun idea from a [TV show](https://www.fox.com/the-floor/) quickly became a family favorite—and now it’s a hit at parties, school events, and team gatherings!
 
 
-<a href="https://github.com/Ellalytics/TheFloorGame/" class="btn btn--primary">Learn more</a>
 
 ---
 
@@ -84,6 +83,7 @@ Answer display<br>
 * Social features
 
 
+<a href="https://github.com/Ellalytics/TheFloorGame/" class="btn btn--primary">Learn more</a>
 
 ---
 

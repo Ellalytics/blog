@@ -6,10 +6,7 @@ categories: AI
 author_profile: true
 ---
 
-
-##  Project Overview
-
-**AskElla PDFChatBot2.0** compared to [the previous version](/blog/AI/RAG), it upgrades by combining **text** and **image** processing to offer more personalized recommendations and smarter responses. It leverages advanced AI to understand both written and visual content, enabling richer, context-aware conversations from product catalogs.
+Compared to [the previous version](/blog/AI/RAG), it upgrades by combining **text** and **image** processing to offer more personalized recommendations and smarter responses. It leverages advanced AI to understand both written and visual content, enabling richer, context-aware conversations from product catalogs.
 
 
 ## Core Components

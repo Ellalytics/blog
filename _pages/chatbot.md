@@ -83,3 +83,7 @@ It's designed to answer product-related queries from PDF, combine RAG with moder
 
 ## [Github](https://github.com/Ellalytics/CustomerServiceAssistant)
 <img src="/blog/assets/images/askella_1.png" alt="askella chatbot">
+
+
+## [Github](https://github.com/Ellalytics/ShoeStoreCustomerServiceAssistantMultimodal)
+<img src="/blog/assets/images/askella_2.png" alt="askella chatbot">

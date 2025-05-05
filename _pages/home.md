@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: home
 permalink: /Portfolio/
 hidden: true
 header:
