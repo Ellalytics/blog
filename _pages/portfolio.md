@@ -60,7 +60,7 @@ game:
   - image_path: /assets/images/minecraft3.png  
     alt: "100% free"  
     title: "Minecraft Chess"   
-    url: "/docs/license/" 
+    url: "/portfolio/minecraft/" 
     btn_class: "btn--primary"
     btn_label: "Learn more" 
 ---  
