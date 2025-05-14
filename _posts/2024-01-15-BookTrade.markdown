@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "BookBean TradeTech Introduction"
-date:   2024-01-05 19:03:13 -0800
+date:   2024-01-15 19:03:13 -0800
 categories: E-commerce
 author_profile: true
 ---

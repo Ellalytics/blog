@@ -1,6 +1,7 @@
 ---
 layout: home
 author_profile: true
+footer: false
 ---
 
 This is my personal blog where I share my thoughts, experiences, and knowledge about programming and technology.

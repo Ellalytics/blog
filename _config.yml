@@ -23,7 +23,7 @@ title                    : "Ella's Blog"
 description              : "A passionate programmer and technology enthusiast"
 email                    : ellalytics@gmail.com
 baseurl                  : "/blog"
-url                      : "http://127.0.0.1:4000"
+url                      : "http://127.0.0.1:4000/blog/"
 twitter_username         : ellalytics
 github_username          : ellalytics
 
@@ -70,12 +70,11 @@ analytics:
 
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ellalytics"
-    - label: "Twitter"
-      icon: "fa-brands fa-x-twitter"
-      url: "https://twitter.com/ellalytics"
+#     - label: "GitHub"
+#       icon: "fab fa-fw fa-github"
+#     # - label: "Twitter"
+#     #   icon: "fa-brands fa-x-twitter"
+#     #   url: "https://twitter.com/ellalytics"
 include:
   - _pages
 
@@ -139,7 +138,6 @@ collections:
   css:
 
 plugins:
-  - jekyll-feed
   - jekyll-include-cache
   - jekyll-remote-theme
   - jekyll-paginate
