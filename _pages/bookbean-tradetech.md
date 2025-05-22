@@ -90,9 +90,9 @@ class Book:
 ### [**3. Book Beans & Transactions**](/blog/E-commerce/BookBean-Points/)
 
 - **Book Beans Rewards:** 
-    - Donating a book: `+5` beans; Completing a trade: `+30` beans  
+    - Donating a book: `+2` beans; Completing a trade: `+10` beans  
 - **Book Beans Deductions:**
-    - Initiating a trade request: `-30` beans (to prevent spamming)
+    - Initiating a trade request: `-10` beans (to prevent spamming)
 - **Book Beans Deductions:**
     - Valid review submitted: `+5` beans  
 
@@ -100,7 +100,7 @@ class Book:
 
 ---
 
-###  [**4. Book Recommendation**](/blog/E-commerce/BookBean-Points/)
+###  4.**Book Recommendation**
 - Based on previous trades, search history, and saved books.
 - Use Collaborative Filtering to recommend books liked by similar users.
 
