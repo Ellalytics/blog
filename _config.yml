@@ -68,13 +68,16 @@ analytics:
     tracking_id          : "G-EMB5R38212"
     anonymize_ip         : true
 
-footer:
-  links:
+# footer:
+#   links:
 #     - label: "GitHub"
 #       icon: "fab fa-fw fa-github"
 #     # - label: "Twitter"
 #     #   icon: "fa-brands fa-x-twitter"
 #     #   url: "https://twitter.com/ellalytics"
+
+footer: false
+
 include:
   - _pages
 

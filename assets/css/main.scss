@@ -234,3 +234,10 @@ blockquote {
 .archive__item-excerpt {
   text-align: left;
 }
+
+footer, 
+footer[role="contentinfo"], 
+.site-footer, 
+.page__footer {
+  display: none !important;
+}
