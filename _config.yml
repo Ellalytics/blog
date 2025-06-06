@@ -23,7 +23,9 @@ title                    : "Ella's Blog"
 description              : "A passionate programmer and technology enthusiast"
 email                    : ellalytics@gmail.com
 baseurl                  : "/blog"
-url                      : "http://127.0.0.1:4000/blog/"
+# url                      : "http://127.0.0.1:4000/blog/"
+url                      : "https://ellalytics.github.io"
+baseurl                  : "/blog"
 twitter_username         : ellalytics
 github_username          : ellalytics
 

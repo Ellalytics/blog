@@ -87,7 +87,7 @@ class Book:
 
 ---
 
-### [**3. Book Beans & Transactions**](/blog/E-commerce/BookBean-Points/)
+### [**3. Book Beans & Transactions**]({{ site.baseurl }}/E-commerce/BookBean-Points/)
 
 - **Book Beans Rewards:** 
     - Donating a book: `+2` beans; Completing a trade: `+10` beans  
