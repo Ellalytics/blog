@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "BookBean TradeTech"
-permalink: /portfolio/bookBean-tradetech/
+permalink: /portfolio/bookbean-tradetech/
 author_profile: true
 ---
 
