@@ -15,7 +15,7 @@ I build a **Natural Language Interface** that delivers accurate, context-aware a
 <br>
 
 **AskElla PDFChatBot** is a smart customer service assistant built with **Streamlit**, **LangChain**, **ChromaDB**, **Generative AI.** 
-It's designed to answer product-related queries from PDF, combine RAG with modern vector search and LLMs to deliver accurate, context-aware responses. It serves as a template for any domain where structured documents need to be transformed into conversational experiences. Addtionally, I also built [ AskElla PDFChatBot V2]({{ site.baseurl }}/AI/RAG_2/) which supports more document formats for upload.
+It's designed to answer product-related queries from PDF, combine RAG with modern vector search and LLMs to deliver accurate, context-aware responses. It serves as a template for any domain where structured documents need to be transformed into conversational experiences. Addtionally, I also built [ AskElla PDFChatBot V2]({{ site.baseurl }}/ai/RAG_2/) which supports more document formats for upload.
 
 ---
 

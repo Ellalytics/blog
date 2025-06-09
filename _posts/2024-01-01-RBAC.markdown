@@ -2,7 +2,7 @@
 layout: single
 title:  "RBAC: Design and Implementation"
 date:   2024-01-01 19:03:13 -0800
-categories: Electrical  
+categories: electrical  
 ---
 Traditional RBAC models often struggle with **static bindings**, **role explosion**, and **a lack of contextual control**. To address this, I introduced a pid-mid inheritance mechanism in Struts2 with interceptors and annotations for fine-grained validation, leveraging Redis caching to reduce database queries and enhance performance without compromising security.
 

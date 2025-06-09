@@ -5,27 +5,27 @@ permalink: /categories/
 author_profile: true
 ---
 
-## AI
-{% for post in site.categories.AI %}
+## ai
+{% for post in site.categories.ai %}
 - [{{ post.title }}]({{ post.url | relative_url }}) <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
 {% endfor %}
 
-## Electrical
-{% for post in site.categories.Electrical %}
+## electrical
+{% for post in site.categories.electrical %}
 - [{{ post.title }}]({{ post.url | relative_url }}) <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
 {% endfor %}
 
-## EV
-{% for post in site.categories.EV %}
+## ev
+{% for post in site.categories.ev %}
 - [{{ post.title }}]({{ post.url | relative_url }}) <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
 {% endfor %}
 
-## E-commerce
-{% for post in site.categories.E-commerce %}
+## e-commerce
+{% for post in site.categories.e-commerce %}
 - [{{ post.title }}]({{ post.url | relative_url }}) <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
 {% endfor %}
 
-## Game
-{% for post in site.categories.Game %}
+## game
+{% for post in site.categories.game %}
 - [{{ post.title }}]({{ post.url | relative_url }}) <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
 {% endfor %}

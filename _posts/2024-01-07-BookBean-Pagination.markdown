@@ -2,7 +2,7 @@
 layout: single
 title:  "BookBean Pagination Design"
 date:   2024-01-07 19:03:13 -0800
-categories: E-commerce
+categories: e-commerce
 author_profile: true
 ---
 When building my second-hand book trading platform, one critical design decision was choosing **frontend or backend pagination**. This choice impacts not only performance but also scalability and user experience.

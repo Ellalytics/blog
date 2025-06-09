@@ -2,7 +2,7 @@
 layout: single
 title:  "EllaVue CostOptimizer"
 date:   2024-01-12 19:03:13 -0800
-categories: AI
+categories: ai
 author_profile: true
 ---
 

@@ -2,7 +2,7 @@
 layout: single
 title:  "MineCraft Chess"
 date:   2024-01-18 19:03:13 -0800
-categories: Game
+categories: game
 author_profile: true
 ---
 

@@ -67,16 +67,16 @@ game:
 
 > Experienced in Software Engineering, Electrical Engineering, Digital Transformation. Focusing on AI, Energy, and E-commerce. Passionate about leveraging AI to drive innovation.
 
-## AI
+## ai
 {% include image_feature_row id='ai' %}
 
-## Energy
+## energy
 {% include image_feature_row id='energy' %}
 
-## E-commerce
+## e-commerce
 {% include image_feature_row id='e-commerce' %}
 
-## Game
+## game
 {% include image_feature_row id='game' %}
     
 

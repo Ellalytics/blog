@@ -2,7 +2,7 @@
 layout: single
 title:  "BookBean Points Design"
 date:   2024-01-06 19:03:13 -0800
-categories: E-commerce
+categories: e-commerce
 author_profile: true
 ---
 

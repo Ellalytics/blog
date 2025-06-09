@@ -2,7 +2,7 @@
 layout: single
 title:  "AskElla PDFChatBot V1"
 date:   2024-01-10 19:03:13 -0800
-categories: AI
+categories: ai
 author_profile: true
 ---
 
@@ -14,7 +14,7 @@ This is **Natural Language Interface** that delivers accurate, context-aware ans
 ##  Project Overview
 
 **AskElla PDFChatBot** is a smart customer service assistant built with **Streamlit**, **LangChain**, **ChromaDB**, **Generative AI.** 
-It's designed to answer product-related queries from PDF, combine RAG with modern vector search and LLMs to deliver accurate, context-aware responses. It serves as a template for any domain where structured documents need to be transformed into conversational experiences. Addtionally, I also built [ AskElla PDFChatBot V2](/blog/AI/RAG_2/) which supports more document formats for upload.
+It's designed to answer product-related queries from PDF, combine RAG with modern vector search and LLMs to deliver accurate, context-aware responses. It serves as a template for any domain where structured documents need to be transformed into conversational experiences. Addtionally, I also built [ AskElla PDFChatBot V2]({{ site.baseurl }}/ai/RAG_2/) which supports more document formats for upload.
 
 ---
 

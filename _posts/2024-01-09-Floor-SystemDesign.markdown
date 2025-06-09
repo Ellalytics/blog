@@ -2,7 +2,7 @@
 layout: single
 title:  "Floor System Design"
 date:   2024-01-09 19:03:13 -0800
-categories: Game
+categories: game
 author_profile: true
 ---
 Started as a fun idea from a [TV show](https://www.fox.com/the-floor/) quickly became a family favorite—and now it’s a hit at parties, school events, and team gatherings!

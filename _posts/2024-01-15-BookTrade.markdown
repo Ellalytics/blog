@@ -2,7 +2,7 @@
 layout: single
 title:  "BookBean TradeTech Introduction"
 date:   2024-01-15 19:03:13 -0800
-categories: E-commerce
+categories: e-commerce
 author_profile: true
 ---
 
@@ -93,7 +93,7 @@ class Book:
 - **Book Beans Deductions:** Initiating a trade request: `-30` beans 
 - **Book Beans Deductions:** Valid review submitted: `+5` beans  
 
-<a href="/blog/E-commerce/BookBean-Points/" class="btn btn--primary">Learn more</a>
+<a href="/blog/e-commerce/BookBean-Points/" class="btn btn--primary">Learn more</a>
 
 ---
 
@@ -101,7 +101,7 @@ class Book:
 - Based on previous trades, search history, and saved books.
 - Use Collaborative Filtering to recommend books liked by similar users.
 
-<a href="/blog/E-commerce/BookBean-Cache/" class="btn btn--primary">Learn more</a>
+<a href="/blog/e-commerce/BookBean-Cache/" class="btn btn--primary">Learn more</a>
 
 ---
 

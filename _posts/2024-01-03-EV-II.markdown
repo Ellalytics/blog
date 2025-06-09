@@ -2,7 +2,7 @@
 layout: single
 title:  "Rural America's EV Revolution"
 date:   2024-01-03 19:03:13 -0800
-categories: EV 
+categories: ev
 mathjax: true
 ---
 

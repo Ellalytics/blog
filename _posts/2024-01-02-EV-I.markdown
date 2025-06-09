@@ -2,7 +2,7 @@
 layout: single
 title:  "EV Charging Station Siting and Sizing Algorithm I"
 date:   2024-01-02 19:03:13 -0800
-categories: EV  
+categories: ev  
 mathjax: true
 ---
 
