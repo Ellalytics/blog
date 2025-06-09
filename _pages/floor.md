@@ -18,4 +18,4 @@ Game board is a 2D grid of squares, each with a specific category. Each square i
 <img src="/blog/assets/images/duel_2.png" alt="floor_duel" width="600">
 
 <br>
-<a href="/blog/Game/Floor-SystemDesign/" class="btn btn--primary">Learn more</a>
+<a href="/blog/game/Floor-SystemDesign/" class="btn btn--primary">Learn more</a>
