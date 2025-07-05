@@ -2,9 +2,8 @@
 layout: single
 title:  "The Evolution of Web Scraping: How Crawl4AI Revolutionizes Data Extraction with AI"
 date:   2025-07-04 20:00:00 -0800
-categories: web_scraping, crawl_ai, llm
+categories: automatic_workflow
 ---
-# The Evolution of Web Scraping: How Crawl4AI Revolutionizes Data Extraction with AI  
 
 ## TL;DR
 
